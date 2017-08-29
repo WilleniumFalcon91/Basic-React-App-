@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Readout from './Readout.js'
+import MagicButton from './MagicButton.js'
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.theNumber = 999;
+  }
   render() {
     return (
       <div className="App">
@@ -14,6 +19,7 @@ class App extends Component {
         <p className="App-intro">
           It's true.
         </p>
+        <MagicButton title="Press here for fun" />
       </div>
     );
   }
